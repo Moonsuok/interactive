@@ -34,7 +34,7 @@ const front = {
     };
   },
 
-  // spitText(el) {
+  // splitText(el) {
   //   const texts = el.textContent.split('');
   //   let HTML = ``;
   //   texts.forEach((a, i)=>{ HTML += `<div class="chars char-${a.toLocaleLowerCase()}" data-chars="${i}">${a}</div>` });

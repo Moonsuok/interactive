@@ -7,14 +7,14 @@ const breakPoint = {
 
 const intro = {
   init() {
-    intro.animation();
+    //intro.animation();
     // window.addEventListener("resize", front.debounce(gsap.matchMediaRefresh, 100));
   },
   animation() {
     const bridge = document.querySelector("#intro h1");
     if ( is.none(bridge) ) return;
 
-    front.spitText(bridge);
+    front.splitText(bridge);
     const mm = gsap.matchMedia();
 
     const _el = {
@@ -112,7 +112,7 @@ const wall = {
     if ( is.none(document.querySelector("#wall .wall-item")) ) return;
 
     const items = document.querySelectorAll("#wall .wall-item:not(.show)");
-    items.forEach( a => front.spitText(a) );
+    items.forEach( a => front.splitText(a) );
 
     const _el = {
       wall: document.querySelector("#wall"),
