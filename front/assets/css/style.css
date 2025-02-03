@@ -6,11 +6,11 @@
 #header .header_right { display: flex; align-items: center; justify-content: space-between; gap: 7rem; }
 #header .header_right ul { display: flex; align-items: center; justify-content: space-between; gap: 5rem; }
 #header #gnb .btn_gnb { display: inline-block; font-size: 1.8rem; font-weight: 600; padding: 0 1rem; }
-#header .btn_contact { display: inline-block; padding: 1rem 2rem; color: #fff; background-color: #6635f0; border-radius: 30px; overflow: hidden; position: relative; z-index: 10; transition: background-color ease-in-out .25s; }
-#header .btn_contact::before { content: ''; display: block; width: 0; height: 100%; background-color: #4726a3;
+#header .btn_contact { display: inline-block; padding: 1rem 2rem; color: #fff; background-color: var(--color-primary-400); border-radius: 30px; overflow: hidden; position: relative; z-index: 10; transition: background-color ease-in-out .25s; }
+#header .btn_contact::before { content: ''; display: block; width: 0; height: 100%; background-color: var(--color-primary-500);
     position: absolute; left: -10%; top: 0; z-index: -12; opacity: 1; box-shadow: 2px 0 14px rgba(0,0,0,.6); -ms-transform: skewX(-20deg); -webkit-transform: skewX(-20deg); transform: skewX(-20deg);
     -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1); -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1); -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1); transition: all .7s cubic-bezier(0.77, 0, 0.175, 1); }
-#header .btn_contact::after { content: ''; display: block; width: 0; height: 100%; background-color: #f1edfc;
+#header .btn_contact::after { content: ''; display: block; width: 0; height: 100%; background-color: var(--color-primary-100);
     position: absolute; top: 0; left: -10%; z-index: -15; opacity: 0; box-shadow: 2px 0px 14px rgba(0,0,0,.6); -ms-transform: skewX(-20deg); -webkit-transform: skewX(-20deg);  transform: skewX(-20deg);   
     -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99); -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99); -o-transition: all .4s cubic-bezier(.2,.95,.57,.99); transition: all .4s cubic-bezier(.2,.95,.57,.99); }
 #header .btn_contact:hover::before, #header .btn_contact:hover::before { opacity: 1; width: 116%; }
@@ -37,7 +37,19 @@
 #intro .text_box p { font-size: 2.4rem; font-weight: 500; margin-bottom: 1rem; }
 
 
-/** wall ***********************************************************/
+
+
+
+
+/** footer ***********************************************************/
+#footer { background-color: var(--color-primary-400); color: #fff; }
+#footer .inner { display: flex; justify-content: space-between; padding: 10vh 10vw 20vh; }
+#footer .footer_copy .footer_logo { font-size: 5rem; }
+#footer .footer_copy p { font-size: 1.3rem; font-weight: 100; margin-top: 1.2rem; }
+#footer .footer_link ul { font-size: 1.8rem; height: 100%; display: flex; align-items: center; gap: 2rem; justify-content: space-around; }
+#footer .footer_info ul li { font-size: 1.8rem; font-weight: 200; color: rgba(255,255,255,.5); display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; }
+#footer .footer_info ul li:last-child { margin-bottom: 0; }
+#footer .footer_info ul li span:first-of-type { font-weight: 500; color: #fff; }
 
 
 
