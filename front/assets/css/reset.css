@@ -90,12 +90,12 @@ input[type=number] { -moz-appearance: textform; }
 select:required:invalid {color:#A0A4AF;}
 option[value=""][disabled] {display:none;} */
 
-::-webkit-scrollbar{ width: 5px; }
-::-webkit-scrollbar-thumb{ height: 30%; background: rgba(0,0,0,.4); border-radius: 10px; }
-::-webkit-scrollbar-track{ background: rgba(102, 53, 240, .2); }
+::-webkit-scrollbar{ width: 8px; }
+::-webkit-scrollbar-thumb{ height: 30%; background: rgba(102, 53, 240, 1); border-radius: 10px; }
+::-webkit-scrollbar-track{ background: rgba(102, 53, 240, 1); }
 
-.scrollbar-track { width: 5px; background: rgba(222, 222, 222, 0); }
-.scrollbar-thumb { width: 5px; background: rgba(102, 53, 240, 1) }
+.scrollbar-track { width: 8px; background: rgba(222, 222, 222, 0); }
+.scrollbar-thumb { width: 8px; background: rgba(102, 53, 240, 1) }
 
 /* *:focus:not(:focus-visible) {outline:none;} */
 
