@@ -66,6 +66,13 @@
 #service .text_box .tab_box ul li p.on { display: block; }
 
 
+/* project **********************************************************/
+#project .inner { width: 100%; display: flex; align-items: center; }
+#project h2 { font-size: 8.2rem; width: 45%; text-align: center; }
+#project .project_list { width: 55%; }
+#project .project_list ul { display: flex; flex-direction: column; gap: 2vw; }
+
+
 
 
 
