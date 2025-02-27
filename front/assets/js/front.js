@@ -34,15 +34,15 @@ const front = {
     };
   },
 
-  // splitText(el) {
-  //   const texts = el.textContent.split('');
-  //   let HTML = ``;
-  //   texts.forEach((a, i)=>{ HTML += `<div class="chars char-${a.toLocaleLowerCase()}" data-chars="${i}">${a}</div>` });
-  //   el.textContent = ``;
-  //   el.insertAdjacentHTML("afterbegin", HTML);
+  spitText(el) {
+    const texts = el.textContent.split('');
+    let HTML = ``;
+    texts.forEach((a, i)=>{ HTML += `<div class="chars char-${a.toLocaleLowerCase()}" data-chars="${i}">${a}</div>` });
+    el.textContent = ``;
+    el.insertAdjacentHTML("afterbegin", HTML);
 
-  //   return el.querySelectorAll(`.chars`);
-  // },
+    return el.querySelectorAll(`.chars`);
+  },
 };
 
 document.addEventListener("DOMContentLoaded", front.init);
